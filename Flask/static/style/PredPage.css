@@ -1,0 +1,176 @@
+@font-face {
+    font-family: roboto-italic;
+    src: url('./fonts/Roboto-Italic.ttf');
+}
+
+* {
+    outline: none;
+}
+
+body {
+    font-family: roboto-italic, "sans-serif";
+    background-image: url('./WallPaper-BackGround/Nature.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+#sus {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0 auto 1rem;
+}
+
+.ContainerOne {
+    width: 700px;
+    height: 600px;
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(3px);
+    border-radius: 10px;
+    align-items: center;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto auto 1rem;
+    filter: drop-shadow( 0 1rem 1rem rgb(160, 0, 210));
+    filter: opacity(70%);
+}
+
+p {
+    margin: 5px 15px;
+    color: black;
+    align-items: center;
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.LabelP {
+    height: 20px;
+    width: 100px;
+    color: black;
+}
+
+option {
+    color: black;
+    background: white;
+    border-radius: 10px !important;
+}
+
+.InputP {
+    color: white;
+    background: white;
+    border-radius: 10px !important;
+}
+
+select {
+    height: 30px;
+    width: 150px;
+    border-radius: 15px;
+    background-color: white;
+    border: none;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+}
+
+.InputOne {
+    display: inline-flex;
+    margin: 15px;
+    align-items: flex-start;
+    align-self: flex-start;
+    flex-direction: row;
+}
+
+.InputTwo {
+    display: inline-flex;
+    margin: 15px;
+    align-items: flex-start;
+    align-self: flex-start;
+    flex-direction: row;
+}
+
+.InputTree {
+    display: inline-flex;
+    margin: 15px;
+    align-items: flex-start;
+    align-self: flex-start;
+    flex-direction: row;
+}
+
+.InputFour {
+    display: inline-flex;
+    margin: 15px;
+    align-items: flex-start;
+    align-self: flex-start;
+    flex-direction: row;
+}
+
+.InputFive {
+    display: inline-flex;
+    margin: 15px;
+    align-items: flex-start;
+    align-self: flex-start;
+    flex-direction: row;
+}
+
+.InputSix {
+    display: inline-flex;
+    margin: 15px;
+    align-items: flex-start;
+    align-self: flex-start;
+    flex-direction: row;
+}
+
+.InputSeven {
+    display: inline-flex;
+    margin: 15px;
+    align-items: flex-start;
+    align-self: flex-start;
+    flex-direction: row;
+}
+
+.InputEight {
+    display: inline-flex;
+    margin: 15px;
+    align-items: flex-start;
+    align-self: flex-start;
+    flex-direction: row;
+}
+
+.submitButton {
+    width: 120px;
+    height: 30px;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    background-color: cyan;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: none;
+    align-items: center;
+    align-content: center;
+    filter: opacity(70%);
+    margin: 0 0 0 300px;
+}
+
+.Pred {
+    height: 30px;
+    width: 180px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    border-radius: 15px;
+    margin: 30px 10px 10px 30px;
+    background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(20%);
+}

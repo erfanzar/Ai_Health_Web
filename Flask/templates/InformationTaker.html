@@ -1,0 +1,136 @@
+{% extends 'base.html'%}
+{%block content%}
+
+<form method="post" action="http://{{Address}}:5000/taker">
+<div class="ContainerOne">
+  <div class="InsideOne">
+    <p> the LifeScore u will take often depend on the age u will enter as input</p>
+
+    <div class="InputOne">
+      <p class="LabelP">Gender</p>
+      <select class="Gender" name="Gender">
+        <option value="0"><p class="InputP">Male</p></option>
+        <option value="1"><p class="InputP">Female</p></option>
+      </select>
+    </div>
+
+    <div class="InputTwo">
+      <p class="LabelP" >Age</p>
+      <select class="Age" name="Age">
+        {%for i in range(101)%}
+        <option value="{{i}}"><p class="InputP">{{i}}</p></option>
+        {% endfor %}
+      </select>
+    </div>
+
+    <div class="InputTree">
+      <p class="LabelP" >Food</p>
+      <select class="Food" name="Food">
+        {%for i in ListFood%}
+        <option value="{{ListFood.index(i)}}"><p class="InputP">{{i}}</p></option>
+        {% endfor %}
+      </select>
+    </div>
+    <div class="InputFour">
+      <p class="LabelP" >Sport</p>
+      <input type="range"   name="Sport" min="0" max="3" step="1" value='0'>
+        <output id="Sport"></output>
+    </div>
+
+
+    <div class="InputFive">
+      <p class="LabelP" >BloodPresure</p>
+      <select class="Blood" name="Blood">
+        {%for i in ListBlood%}
+        <option  value="{{ListBlood.index(i)}}"><p class="InputP">{{i}}</p></option>
+        {% endfor %}
+      </select>
+    </div>
+
+    <div class="InputSix">
+      <p class="LabelP" >Mental</p>
+      
+        <input type="range"   name="Mental" min="0" max="3" step="1" value='0'>
+     
+    </div>
+
+
+
+
+
+    <div class="InputSeven">
+      <p class="LabelP" >Smok</p>
+      <select class="Smok" name="Smok">
+        {%for i in ListSmok%}
+        <option value="{{ListSmok.index(i)}}"><p class="InputP">{{i}}</p></option>
+        {% endfor %}
+      </select>
+    </div>
+
+    <div class="InputEight">
+      <p class="LabelP" >Happynes</p>
+      <input type="range" id="HappeNes" name="HappeNes" min="0" max="3" step="1" value='0'>
+      <output name="HappeNes"></output>
+    </div>
+
+
+
+
+    <div class="InputNine">
+      <p class="LabelP" >Drug</p>
+      
+    </div>
+
+
+
+
+    <input type="submit" name="submit" value="submit" class="submitButton">
+  </div>
+
+ 
+
+
+  {% if Pred %}
+    <div class="Pred">
+      <a>Life Score : {{Pred}}</a>
+    </div>
+  {%endif%}
+  {%if NFood > 0.5 %}
+    <a>U nEed To change ur food type</a>
+  {%endif%}
+  {%if NSport > 0.5 %}
+    <a>U nEed To go out side and run everyday for 30 min at last</a>
+  {%endif%}
+  {%if NDoctor > 0.5 %}
+    <a>U nEed To Visit a Doctor</a>
+  {%endif%}
+</div>
+
+</form>
+
+<!--
+<script type="text/javascript">
+  var bg = [
+    'static/style/WallPaper-BackGround/Nature.jpg',
+    'static/style/WallPaper-BackGround/LL_AI_feat.jpg',
+    'static/style/WallPaper-BackGround/ai.png'
+  ];
+
+  setInterval(
+  function(){
+    // for(let i of bg){
+    //   console.log(i);
+    // }
+    for(var i=0 ; i < 3 ; i++){
+      console.log(bg[i]);
+      for(var k=0 ; k <3 ; k++){
+      setInterval(function(){
+        console.log(bg[k]);
+      },5000)}
+    }
+  },20000
+  )
+
+</script> -->
+
+{% endblock %}
