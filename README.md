@@ -2,8 +2,9 @@
 
 Flask :
 
- the project can be run with :
-  python SitePlan.py
+ Run :
+   
+     python SitePlan.py
   
   something fun for find the healty of your life or body with
   3 kind of models 
@@ -18,4 +19,4 @@ Flask :
   
   Django :
   
-    not Created Yet Maybe Tomorrow :D
+   not Created Yet Maybe Tomorrow :D
